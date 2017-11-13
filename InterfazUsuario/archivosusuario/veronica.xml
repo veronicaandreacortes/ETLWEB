@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<importacion>
+	<usuarios>
+		<usuario>
+			<correo>JUANITO2@correo.com</correo>
+			<nombrecompleto>JUANITO2</nombrecompleto>
+			<clave>orto</clave>
+			<celular>5235566</celular>
+				<perfiles>
+					<perfil>
+						<roles>
+							<rol>
+							    <idrol>1</idrol>
+								<desrol>JUANITO2_Administrador</desrol>
+								<granulos>
+									<granulo>
+										<permisos>
+											<permiso>
+												<idpermiso>1</idpermiso>
+												<despermiso>JUANITO2_Boton Editar Usuario</despermiso>
+											</permiso>
+											<permiso>
+												<idpermiso>2</idpermiso>
+												<despermiso>JUANITO2_Boton Crear Usuario</despermiso>
+											</permiso>
+										</permisos>
+									</granulo>
+									<granulo>
+										<permisos>
+											<permiso>
+												<idpermiso>3</idpermiso>
+												<despermiso>JUANITO2_Boton Editar Perfil</despermiso>
+											</permiso>
+											<permiso>
+												<idpermiso>4</idpermiso>
+												<despermiso>JUANITO2_Boton Editar Perfil</despermiso>
+											</permiso>
+										</permisos>
+									</granulo>
+								</granulos>
+							</rol>
+						</roles>
+				</perfil>
+				<perfil>
+					<roles>
+						<rol>
+							<idrol>2</idrol>
+							<desrol>JUANITO2_coordinador</desrol>
+							<granulos>
+								<granulo>
+									<permisos>
+											<permiso>
+												<idpermiso>5</idpermiso>
+												<despermiso>JUANITO2_Boton Editar Rol</despermiso>
+											</permiso>
+											<permiso>
+												<idpermiso>6</idpermiso>
+												<despermiso>JUANITO2_Boton Crear Rol</despermiso>
+											</permiso>
+									</permisos>
+								</granulo>
+								<granulo>
+									<permisos>
+										<permiso>
+											<idpermiso>7</idpermiso>
+												<despermiso>JUANITO2_Boton Editar Granulo</despermiso>
+											</permiso>
+											<permiso>
+												<idpermiso>8</idpermiso>
+												<despermiso>JUANITO2_Boton Editar Granulo</despermiso>
+										</permiso>
+									</permisos>
+								</granulo>
+							</granulos>
+						</rol>
+					</roles>
+				</perfil>
+			</perfiles>			
+		</usuario>
+	</usuarios>
+</importacion>
