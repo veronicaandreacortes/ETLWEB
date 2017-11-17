@@ -1,0 +1,11 @@
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\bin\InterfazUsuario.dll.config
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\bin\InterfazUsuario.dll
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\bin\InterfazUsuario.pdb
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\bin\Entidades.dll
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\bin\RestSharp.dll
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\bin\Entidades.pdb
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\bin\RestSharp.xml
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\obj\Debug\InterfazUsuario.csprojResolveAssemblyReference.cache
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\obj\Debug\InterfazUsuario.csproj.CoreCompileInputs.cache
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\obj\Debug\InterfazUsuario.dll
+C:\Users\veronica\source\repos\ETLWEB\InterfazUsuario\obj\Debug\InterfazUsuario.pdb

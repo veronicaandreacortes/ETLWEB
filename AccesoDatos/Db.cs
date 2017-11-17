@@ -8,8 +8,8 @@ namespace AccesoDatos
     public class Db
     {
         // 
-        //static DbProviderFactory fabricaProveedorBaseDatos = DbProviderFactories.GetFactory("System.Data.SqlClient");
-        static DbProviderFactory fabricaProveedorBaseDatos = DbProviderFactories.GetFactory("System.Data.SQLite");
+        static DbProviderFactory fabricaProveedorBaseDatos = DbProviderFactories.GetFactory("System.Data.SqlClient");
+        //static DbProviderFactory fabricaProveedorBaseDatos = DbProviderFactories.GetFactory("System.Data.SQLite");
 
         private string cadenaConexion;
         private int tiempoDeEspera;

@@ -94,5 +94,20 @@ namespace AccesoDatos
         IList<Permisos> BuscarPermiso(Permisos permiso);
 
         #endregion
+
+
+        //#region ciudades
+
+        //IList<Ciudades> ObtenerListaCiudades();
+
+        //IList<Ciudades> BuscarRoles(Ciudades ciudad);
+
+        //Roles Crear(Ciudades rol);
+
+        //Roles ObtenerCiudadPorId(int id);
+
+        //Roles Actualizar(Ciudades rol);
+
+        //void EliminarCiudades(int id);
     }
 }

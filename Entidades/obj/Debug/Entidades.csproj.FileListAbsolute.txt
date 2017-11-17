@@ -1,0 +1,6 @@
+C:\Users\veronica\source\repos\ETLWEB\Entidades\bin\Debug\Entidades.dll
+C:\Users\veronica\source\repos\ETLWEB\Entidades\bin\Debug\Entidades.pdb
+C:\Users\veronica\source\repos\ETLWEB\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\veronica\source\repos\ETLWEB\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\veronica\source\repos\ETLWEB\Entidades\obj\Debug\Entidades.dll
+C:\Users\veronica\source\repos\ETLWEB\Entidades\obj\Debug\Entidades.pdb

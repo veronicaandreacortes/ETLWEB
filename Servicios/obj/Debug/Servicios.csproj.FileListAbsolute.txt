@@ -1,0 +1,11 @@
+C:\Users\veronica\source\repos\ETLWEB\Servicios\bin\Debug\Servicios.dll
+C:\Users\veronica\source\repos\ETLWEB\Servicios\bin\Debug\Servicios.pdb
+C:\Users\veronica\source\repos\ETLWEB\Servicios\bin\Debug\AccesoDatos.dll
+C:\Users\veronica\source\repos\ETLWEB\Servicios\bin\Debug\Entidades.dll
+C:\Users\veronica\source\repos\ETLWEB\Servicios\bin\Debug\AccesoDatos.pdb
+C:\Users\veronica\source\repos\ETLWEB\Servicios\bin\Debug\AccesoDatos.dll.config
+C:\Users\veronica\source\repos\ETLWEB\Servicios\bin\Debug\Entidades.pdb
+C:\Users\veronica\source\repos\ETLWEB\Servicios\obj\Debug\Servicios.csprojResolveAssemblyReference.cache
+C:\Users\veronica\source\repos\ETLWEB\Servicios\obj\Debug\Servicios.csproj.CoreCompileInputs.cache
+C:\Users\veronica\source\repos\ETLWEB\Servicios\obj\Debug\Servicios.dll
+C:\Users\veronica\source\repos\ETLWEB\Servicios\obj\Debug\Servicios.pdb

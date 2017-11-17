@@ -698,7 +698,377 @@ namespace AccesoDatos
         };
         #endregion
 
+        //#region Ciudades
 
+        //public IList<Ciudades> ObtenerListaCiudades()
+        //{
+        //    string sql =
+        //        @"SELECT [idCiudad],
+        //                   [idDepartamento]
+        //                   [ciudad]
+        //              FROM [ciudades]
+        //        ORDER BY [idciudad] ASC";
+
+        //    return db.Leer(sql, ConstruirObjetoCiudad).ToList();
+        //}
+
+        //public Ciudades Crear(Ciudades ciudad)
+        //{
+        //    string sql =
+        //            @"INSERT INTO [ciudades]
+        //            (
+        //               [idCiudad] 
+        //               [idDepartamento]
+        //               [ciudad]
+        //            )
+        //            VALUES
+        //            (
+        //                @idCiudad
+        //                @idDepartamento
+        //                @ciudad
+        //            ); SELECT last_insert_rowid() FROM ciudades;";
+
+        //    ciudad.idCiudad = db.Insertar(sql, ObtenerParametrosCiudad(ciudad));
+        //    return ciudad;
+        //}
+
+        //public Roles ObtenerCiudadPorId(int id)
+        //{
+        //    string sql =
+        //        @"SELECT 
+        //                [idCiudad],
+        //                [idDepartamento]
+        //                [ciudad]
+        //          FROM [ciudades]
+        //          WHERE [idCiudad] = @idCiudad
+        //        ORDER BY [idCiudad] ASC";
+
+        //    object[] parametros = { "@idCiudad", id };
+
+        //    return db.Leer(sql, ConstruirObjetoCiudad, parametros).FirstOrDefault();
+        //}
+
+        //public Roles Actualizar(Ciudades ciudad)
+        //{
+        //    string sql =
+        //            @"UPDATE [ciudades] SET 
+        //            [idCiudad] = @idCiudad
+        //            [idDepartamento] = @idDepartamento 
+        //            [ciudad] = @ciudad 
+        //            WHERE [idCiudad] = @iCiudad";
+
+        //    db.Actualizar(sql, ObtenerParametrosCiudad(ciudad));
+        //    return ciudad;
+        //}
+
+        //public void EliminarCiudad(int id)
+        //{
+        //    string sql =
+        //            @"DELETE FROM [ciudades]
+        //            WHERE [idCiudad] = @idCiudad";
+
+        //    object[] parametros = { "@idCiudad", id };
+
+        //    db.Eliminar(sql, parametros);
+        //}
+
+        //private object[] ObtenerParametrosCiudad(Ciudades o)
+        //{
+        //    return new object[]
+        //    {
+
+        //        "@idCiudad", o.idCiudad,
+        //        "@idDepartamento", o.idDepartamento,
+        //        "@ciudad", o.ciudad,
+        //    };
+        //}
+
+        //private static Func<IDataReader, Ciudades> ConstruirObjetoCiudad = lectorDatos =>
+        //{
+        //    Ciudades result = new Ciudades()
+        //    {
+        //        idCiudad = lectorDatos["idCiudad"].ComoId(),
+        //        idDepartamento = lectorDatos["idDepartamento"].ComoId()
+        //        ciudad = lectorDatos["ciudad"].ComoString()
+        //    };
+
+        //    return result;
+        //};
+
+
+        //public IList<Ciudades> BuscarCiudades(Ciudades ciudad)
+        //{
+        //    string sqlSelect =
+        //        @"SELECT [idCiudad],
+        //                   [idDepartamento]
+        //                   [ciudad]
+        //         FROM [ciudades] WHERE 1=1 ";
+
+        //    string sqlWhere = string.Empty;
+
+        //    List<object> parametros = new List<object>();
+
+        //    if (!string.IsNullOrWhiteSpace(ciudad.ciudad))
+        //    {
+        //        sqlWhere += " AND ciudad LIKE @ciudad ";
+        //        parametros.Add("@ciudad");
+        //        parametros.Add("%" + ciudad.ciudad + "%");
+        //    }
+
+        //    return db.Leer(sqlSelect + sqlWhere, ConstruirObjetoCiudad, parametros.ToArray()).ToList();
+        //}
+
+        //#endregion
+        
+        //#region Departamentos
+
+        //public IList<Departamentos> ObtenerListaDepartamentos()
+        //{
+        //    string sql =
+        //        @"SELECT [idDepartamento],
+        //                 [departamento]
+        //            FROM [departamentos]
+        //        ORDER BY [idDepartamento] ASC";
+
+        //    return db.Leer(sql, ConstruirObjetoDepartamento).ToList();
+        //}
+
+        //public Departamentos Crear(Departamentos departamento)
+        //{
+        //    string sql =
+        //            @"INSERT INTO [departamentos]
+        //            (
+        //               [idDepartamento],
+        //               [departamento]
+        //            )
+        //            VALUES
+        //            (
+        //                @idDepartamento,
+        //                @departamento
+        //            ); SELECT last_insert_rowid() FROM departamentos;";
+
+        //    departamento.idDepartamento = db.Insertar(sql, ObtenerParametrosDepartamento(departamento));
+        //    return departamento;
+        //}
+
+        //public Roles ObtenerDepartamentoPorId(int id)
+        //{
+        //    string sql =
+        //        @"SELECT 
+        //                [idDepartamento],
+        //                [departamento]
+        //          FROM [departamentos]
+        //          WHERE [idDepartamento] = @idDepartamento
+        //        ORDER BY [idDepartamento] ASC";
+
+        //    object[] parametros = { "@idDepartamento", id };
+
+        //    return db.Leer(sql, ConstruirObjetoDepartamento, parametros).FirstOrDefault();
+        //}
+
+        //public Roles Actualizar(Departamentos departamento)
+        //{
+        //    string sql =
+        //            @"UPDATE [departamentos] SET 
+        //            [idDepartamento] = @idDepartamento,
+        //            [departamento] = @departamento 
+        //            WHERE [idDepartamento] = @idDepartamento";
+
+        //    db.Actualizar(sql, ObtenerParametrosDepartamento(departamento));
+        //    return departamento;
+        //}
+
+        //public void EliminarDepartamento(int id)
+        //{
+        //    string sql =
+        //            @"DELETE FROM [departamentos]
+        //            WHERE [idDepartamento] = @idDepartamento";
+
+        //    object[] parametros = { "@idDepartamento", id };
+
+        //    db.Eliminar(sql, parametros);
+        //}
+
+        //private object[] ObtenerParametrosDepartamento(Departamentos o)
+        //{
+        //    return new object[]
+        //    {
+        //        "@idDepartamento", o.idDepartamento,
+        //        "@departamento", o.departamento,
+        //    };
+        //}
+
+        //private static Func<IDataReader, Departamentos> ConstruirObjetoDepartamento = lectorDatos =>
+        //{
+        //    Departamentos result = new Departamentos()
+        //    {
+        //        idDepartamento = lectorDatos["idDepartamento"].ComoId(),
+        //        departamento = lectorDatos["departamento"].ComoString()
+        //    };
+
+        //    return result;
+        //};
+
+
+        //public IList<Departamentos> BuscarDepartamentos(Departamentos departamento)
+        //{
+        //    string sqlSelect =
+        //        @"SELECT [idDepartamento],
+        //                   [departamento]
+        //         FROM [departamentos] WHERE 1=1 ";
+
+        //    string sqlWhere = string.Empty;
+
+        //    List<object> parametros = new List<object>();
+
+        //    if (!string.IsNullOrWhiteSpace(departamento.departamento))
+        //    {
+        //        sqlWhere += " AND departamento LIKE @departamento ";
+        //        parametros.Add("@departamento");
+        //        parametros.Add("%" + departamento.departamento + "%");
+        //    }
+
+        //    return db.Leer(sqlSelect + sqlWhere, ConstruirObjetoDepartamento, parametros.ToArray()).ToList();
+        //}
+
+        //#endregion
+
+        //#region Clientes
+
+        //public IList<Clientes> ObtenerListaClientes()
+        //{
+        //    string sql =
+        //        @"SELECT [idCliente],
+        //                 [nombre]
+        //                 [idDepartamento],
+        //                 [idCiudad]
+        //              FROM [clientes]
+        //        ORDER BY [idCliente] ASC";
+
+        //    return db.Leer(sql, ConstruirObjetoClientes).ToList();
+        //}
+
+        //public Clientes Crear(Clientes cliente)
+        //{
+        //    string sql =
+        //            @"INSERT INTO [clientes]
+        //            (
+        //                [idCliente],
+        //                [nombre],
+        //                [idDepartamento],
+        //                [idCiudad]
+                                                                     
+        //            )
+        //            VALUES
+        //            (
+        //                @idCliente, 
+        //                @nombre,
+        //                @idDepartamento,
+        //                @idCiudad
+        //            ); SELECT last_insert_rowid() FROM perfiles;";
+
+        //    Cliente.idCliente = db.Insertar(sql, ObtenerParametrosPerfil(Cliente));
+        //    return Cliente;
+        //}
+
+        //public Clientes ObtenerClientePorId(int id)
+        //{
+        //    string sql =
+        //        @"SELECT 
+        //                [idCliente],
+        //                [nombre],
+        //                [idciudad],
+        //                [idDepartamento]
+        //          FROM [clientes]
+        //          WHERE [idCliente] = @idperfil
+        //        ORDER BY [idCliente] ASC";
+
+        //    object[] parametros = { "@idCliente", id };
+
+        //    return db.Leer(sql, ConstruirObjetoCliente, parametros).FirstOrDefault();
+        //}
+
+        //public Perfiles Actualizar(Clientes cliente)
+        //{
+        //    string sql =
+        //            @"UPDATE [clientes] SET 
+        //            [idCliente] = @idCliente,  
+        //            [nombre] = @nombre,  
+        //            [idDepartamento] = @idDepartamento,
+        //            [idCiudadad] = @idCiudadad 
+        //            WHERE [idCliente] = @idCliente";
+
+        //    db.Actualizar(sql, ObtenerParametrosPerfil(cliente));
+        //    return cliente;
+        //}
+
+        //public void EliminarCliente(int id)
+        //{
+        //    string sql =
+        //            @"DELETE FROM [clientes]
+        //            WHERE [idCliente] = @idCliente";
+
+        //    object[] parametros = { "@idCliente", id };
+
+        //    db.Eliminar(sql, parametros);
+        //}
+
+        //private object[] ObtenerParametrosCliente(Clientes o)
+        //{
+        //    return new object[]
+        //    {
+
+        //        "@idCliente", o.idCliente,
+        //        "@nombre", o.nombre,
+        //        "@idDepartamento", o.idDepartamento,
+        //        "@idCiudad", o.idCiudad
+        //    };
+        //}
+
+        //public IList<Clientes> BuscarCliente(Clientes cliente)
+        //{
+        //    string sqlSelect =
+        //        @"SELECT [idCliente],
+        //                 [nombre],
+        //                 [idDepartamento],
+        //                 [idciudad]
+        //         FROM [clientes] WHERE 1=1 ";
+
+        //    string sqlWhere = string.Empty;
+
+        //    List<object> parametros = new List<object>();
+
+        //    if (!String.IsNullOrWhiteSpace(cliente.idDepartamento.ToString()))
+        //    {
+        //        sqlWhere += " AND idDepartamento LIKE @idDepartamento ";
+        //        parametros.Add("@idDepartamento");
+        //        parametros.Add("%" + cliente.idDepartamento + "%");
+        //    }
+
+        //    if (!String.IsNullOrWhiteSpace(ciudad.idCiudad.ToString()))
+        //    {
+        //        sqlWhere += " AND idCiudad LIKE @idCiudad ";
+        //        parametros.Add("@idCiudad");
+        //        parametros.Add("%" + ciudad.idCiudad + "%");
+        //    }
+
+        //    return db.Leer(sqlSelect + sqlWhere, ConstruirObjetoCliente, parametros.ToArray()).ToList();
+        //}
+
+
+        //private static Func<IDataReader, Clientes> ConstruirObjetoCliente = lectorDatos =>
+        //{
+        //    Clientes result = new Clientes()
+        //    {
+        //        idcliente = lectorDatos["idCliente"].ComoId(),
+        //        nombre = lectorDatos["nombre"].ComoString(),
+        //        idusuario = lectorDatos["idCiudad"].ComoId(),
+        //        idrol = lectorDatos["idDepartamento"].ComoId()
+        //    };
+
+        //    return result;
+        //};
+        //#endregion
 
     }
 }
